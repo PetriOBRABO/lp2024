@@ -101,7 +101,7 @@ void q10(){
 void q11(){
     int num1,num2;
     printf("Digite quatro numeros para calcular as 4 operacoes: ");
-    scanf("%d %d %d %d",num1,num2);
+    scanf("%d %d %d %d",&num1,&num2);
         printf("a soma entre %d e %d é: \n",num1,num2,num1+num2);
         printf("a subtracao entre %d e %d é: \n",num1,num1-num2);
         printf("a multiplicacao entre %d e %d é: \n",num1,num2,num1*num2);
@@ -113,16 +113,49 @@ void q11(){
 //12. Faça um programa que leia um número real e calcule o
 //    quadrado deste número. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
+void q12(){
+    int num1,quadrado;
+    printf("Digite um numero real para calcular seu quadrado: ");
+    scanf("%d",&num1);
+    quadrado=num1*num1;
+    printf("O quadrado do numero %d é: %d", num1,quadrado);
+
+}
 
 //13. Faça um programa que leia o saldo de uma conta poupança e
 //    imprima o novo saldo, considerando um reajuste de 2%.
+void q13(){
+    float saldo,nvsaldo;
+    printf("Digite o saldo atual da poupança: ");
+    scanf("%.2f",&saldo);
+    nvsaldo=saldo*1.02;
+    printf("O seu novo saldo considerando o reajuste de 2 por cento: %.2f",nvsaldo);    
+}
 
 //14. Faça um programa que leia a base e a altura de um retângulo
 //    e imprima o perímetro (base + altura) e a área (base * altura).
+void q14(){
+    float base,altura,perimetro,area;
+    printf("Digite as medidas do retalgulo: base e altura. ");
+    scanf("%.0f %.0f", &base,&altura);
+    perimetro=base+altura;
+    area=base*altura;
+    printf("Perimetro do retangulo: %.2f\n",perimetro);
+    printf("Area do retangulo: %.2f",area);
+}
 
 //15. Faça um programa que leia o valor de um produto, o percentual
 //    do desconto desejado e imprima o valor do desconto e o valor
 //    do produto subtraindo o desconto.
+void q15(){
+    float produto,descontodes,valordesconto
+    printf("Digite o valor do produto: ");
+    scanf("%f",&produto);
+    printf("Digite o valor do desconto desejado em porcentagem: ");
+    scanf("%f",&descontodes);
+    valordesconto=produto-(produto*descontodes);
+    printf("O valor do produto %.2f com desconto de %f é: %.2f",produto,descontodes,valordesconto);
+    }
 
 //16. Faça um programa que calcule o reajuste do salário de um
 //    funcionário. Para isso, o programa deverá ler o salário atual
@@ -155,7 +188,7 @@ void q11(){
 //    de atraso, os juros que serão cobrados pelo período de atraso, o
 //    valor da prestação acrescido dos juros. Considere juros simples.
 void q19(){
-    
+
 }
 
 //20. Faça um programa que efetue a apresentação do valor da conversão

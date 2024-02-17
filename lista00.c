@@ -161,6 +161,14 @@ void q15(){
 //    funcionário. Para isso, o programa deverá ler o salário atual
 //    do funcionário e ler o percentual de reajuste. Ao final imprimir
 //    o valor do novo salário.
+void q16(){
+    float salarioatual,reajuste,nvsalario;
+    print("Digite o salario atual: ");
+    scanf("%f", &salarioatual);
+    printf("Digite um percentual de reajuste: ");
+    scanf("%f",&reajuste);
+    nvsalario=salarioatual+(reajuste*salario);////////////////////////////////////////////////a terminar
+}
 
 //17. Faça um programa que calcule a conversão entre graus centígrados
 //    e Fahrenheit. Para isso, leia o valor em centígrados e calcule

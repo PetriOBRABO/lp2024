@@ -127,7 +127,7 @@ void q12(){
 void q13(){
     float saldo,nvsaldo;
     printf("Digite o saldo atual da poupança: ");
-    scanf("%.2f",&saldo);
+    scanf("%f",&saldo);
     nvsaldo=saldo*1.02;
     printf("O seu novo saldo considerando o reajuste de 2 por cento: %.2f",nvsaldo);    
 }
@@ -137,7 +137,7 @@ void q13(){
 void q14(){
     float base,altura,perimetro,area;
     printf("Digite as medidas do retalgulo: base e altura. ");
-    scanf("%.0f %.0f", &base,&altura);
+    scanf("%f %f", &base,&altura);
     perimetro=base+altura;
     area=base*altura;
     printf("Perimetro do retangulo: %.2f\n",perimetro);
@@ -148,12 +148,12 @@ void q14(){
 //    do desconto desejado e imprima o valor do desconto e o valor
 //    do produto subtraindo o desconto.
 void q15(){
-    float produto,descontodes,valordesconto
+    float produto,descontodes,valordesconto;
     printf("Digite o valor do produto: ");
     scanf("%f",&produto);
     printf("Digite o valor do desconto desejado em porcentagem: ");
     scanf("%f",&descontodes);
-    valordesconto=produto-(produto*descontodes);
+    valordesconto=produto-(produto*descontodes/100);
     printf("O valor do produto %.2f com desconto de %f é: %.2f",produto,descontodes,valordesconto);
     }
 
@@ -163,11 +163,11 @@ void q15(){
 //    o valor do novo salário.
 void q16(){
     float salarioatual,reajuste,nvsalario;
-    print("Digite o salario atual: ");
+    printf("Digite o salario atual: ");
     scanf("%f", &salarioatual);
     printf("Digite um percentual de reajuste: ");
     scanf("%f",&reajuste);
-    nvsalario=salarioatual+(reajuste*salario);////////////////////////////////////////////////a terminar
+    nvsalario=salarioatual+(reajuste/100*salarioatual);////////////////////////////////////////////////a terminar
 }
 
 //17. Faça um programa que calcule a conversão entre graus centígrados

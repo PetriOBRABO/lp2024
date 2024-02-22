@@ -7,7 +7,7 @@ Exercícios sobre os comandos básicos em C
 
 //1. Faça um programa que imprima o seu nome.
 void q01() {
-    printf("João Paulo\n");
+    printf("Roque Padilha\n");
 }
 
 //2. Faça um programa que imprima o produto dos valores 30 e 27.

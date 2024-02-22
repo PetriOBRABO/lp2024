@@ -196,7 +196,18 @@ void q16(){
 //    de atraso, os juros que serão cobrados pelo período de atraso, o
 //    valor da prestação acrescido dos juros. Considere juros simples.
 void q19(){
-
+    float valorvencido,taxaperiodica,periodoatraso,juros;
+    printf("Digite o valor da prestacao vencida: ");
+    scanf("%f",&valorvencido);
+    printf("Digite o valor da taxa periodica e o periodo de atraso respectivamente: ");
+    scanf("%f %f",&taxaperiodica,&valorvencido);
+    juros=(valorvencido*taxaperiodica*periodoatraso)/100;
+    prestacaoatraso=valorvencido+juros;
+    printf("Valor da prestacao em atraso: %.2f\n",prestacaoatraso);
+    printf("Periodo de atraso: %.2f meses\n",periodoatraso);
+    printf("Juros cobrados pelo periodo de atraso: %.2f\n",juros);
+    printf("Valor da prestacao acrescido dos juros: %.2f\n",prestacaoatraso);
+    
 }
 
 //20. Faça um programa que efetue a apresentação do valor da conversão

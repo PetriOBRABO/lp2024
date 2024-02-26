@@ -20,22 +20,53 @@ void questao01() {
 
 //2. Faça um programa que leia dois valores inteiros e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8, caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
 void questao02() {
+	int num1,num2,soma=0;
+	printf("Digite dois numeros, respectivamente: ");
+	scanf("%d %d",&num1,&num2);
+	soma=num1+num2;
+	if(soma>20){
+		soma=soma+8;
+		printf("A soma entre %d e %d e: %d",num1,num2,soma);
+	}
+	else{
+		soma=soma-5;
+		printf("A soma entre %d e %d e: %d",num1,num2,soma);
   
-
+	}
 }
 
 //3. Faça um programa que leia um número e imprima uma das duas mensagens: "É múltiplo de 3"ou "Não é múltiplo de 3".
 void questao03() {
-	
+	int num;
+	printf("Digite um numero qualquer para descobrir seu multiplo");
+	scanf("%d",&num);
+	if(num % 3==0){
+		printf("%d e multiplo de 3.",num);
+	}
+	else{
+		printf("%d nao e multiplo de 3.",num);
+	}
 }
 
 //4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 void questao04() {
-	
+	int num;
+	printf("Digite um numero qualquer para descobrir se e divisivel por 5");
+	scanf("%d",&num);
+	if(num % 5==0){
+		printf("%d e divisivel por 5.",num);
+	}	
 }
 
 //5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 void questao05() {
+	int num;
+	printf("Digite um numero qualquer para descobrir se e divisivel por 3 e por 7");
+	scanf("%d",&num);
+	if(num % 3==0 && num % 7==0){
+		printf("%d e divisivel por 3 e por 7");
+	}
+		
 
 }
 

@@ -175,6 +175,14 @@ void q16(){
 //    com base na fórmula a seguir. Após calcular o programa deve
 //    imprimir o resultado da conversão.
 //    F = (9 x C +160) / 5
+void q17(){
+    float cent,fah;
+    printf("Digite o valor da temperatura em Centigrados para converter em Fahrenheit.");
+    scanf("%f",&cent);
+    fah=(9*cent+160)/5;
+    printf("%.2f Centigrados equivale a %.2f Fahrenheits",cent,fah);
+}
+
 
 //18. Faça um programa que calcule a quantidade de litros de combustível
 //    consumidos em uma viagem, sabendo-se que o carro tem autonomia de

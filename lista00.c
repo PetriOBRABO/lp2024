@@ -196,6 +196,17 @@ void q17(){
 //    • L = Litros de combustível consumidos
 //    Ao final, o programa deverá imprimir a distância percorrida e a
 //    quantidade de litros consumidos na viagem.
+void q18(){
+    float litcomb,tempviagem,velomed,l,d;
+    printf("Digite o tempo gasto na viagem: \n");
+    scanf("%f",&tempviagem);
+    printf("Digite a velocidade media durante o percurso\n");
+    scanf("%f",&velomed);
+    d=tempviagem*velomed;
+    l=d/12;
+    printf("A distancia percorrida foi %.2f e o consumo em litros: %.2f ",d,l);
+
+}
 
 //19. Faça um programa que calcule o valor de uma prestação em atraso.
 //    Para isso, o programa deve ler o valor da prestação vencida, a

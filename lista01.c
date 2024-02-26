@@ -75,6 +75,17 @@ void questao05() {
 //bruto. Faça um programa em linguagem C que permita entrar com o salário bruto e o
 //valor da prestação e informar se o empréstimo pode ou não ser concedido.
 void questao06() {
+	float salabruto,valorprest,concornot;
+	printf("Digite o valor do salario bruto: ");
+	scanf("%f",&salabruto);
+	printf("Digite o valor da prestacao: ");
+	scanf("%f",&valorprest);
+	concornot=salabruto*0.30;
+	if(valorprest<concornot){
+		printf("Emprestimo concedido!");
+		}else{
+		printf("Emprestimo nao concedido!");
+	}
 
 }
 

@@ -110,6 +110,18 @@ void questao07() {
 //8. Faça um programa que leia um número e imprima uma das mensagens: 
 //"Maior do que 20", "Igual a 20"ou "Menor do que 20".
 void questao08() {
+	int num;
+	printf("Digite um numero:");
+	scanf("%d",&num);
+	if(num>20){
+		printf("%d e maior que 20");
+	}
+	if(num==20){
+		printf("%d e igual a 20");
+	}
+	if(num<20){
+		printf("%d e menor que 20");
+	}
 	
 }
 

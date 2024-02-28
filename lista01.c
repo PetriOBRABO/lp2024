@@ -137,13 +137,47 @@ void questao09() {
 	}else{
 		printf("Ano de nascimento invalido!");
 	}
-	
-	
 }
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem
 //crescente.
-void questao10() {
+void questao10(){
+	    int num1,num2,num3;
+    int first,second,third;
+
+    printf("Digite tres numeros, respectivamente: ");
+    scanf("%d %d %d",&num1,&num2,&num3);
+
+    if (num1<num2 && num1<num3){
+        first=num1;
+        if (num2<num3) {
+            second=num2;
+            third=num3;
+        } else{
+            second=num3;
+            third=num2;
+        }
+    } else if(num2<num1 && num2<num3) {
+        first=num2;
+        if (num1<num3) {
+            second=num1;
+            third=num3;
+        } else{
+            second=num3;
+            third=num1;
+        }
+    }else{
+        first=num3;
+        if(num1<num2) {
+            second=num1;
+            third=num2;
+        } else{
+            second=num2;
+            third=num1;
+        }
+    }
+    printf("%d %d %d é a sequência em ordem crescente.\n",first,second,third);
+
 
 }
 

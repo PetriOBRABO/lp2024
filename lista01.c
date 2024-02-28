@@ -129,6 +129,15 @@ void questao08() {
 //atual. O programa deve imprimir a idade da pessoa. Não se esqueça de verificar se o
 //ano de nascimento informado é válido.
 void questao09() {
+	int anoatual=2024,anonascimento;
+	printf("Digite seu ano de nascimento: ");
+	scanf("%d",&anonascimento);
+	if(anonascimento>1900){
+	printf("A idade da pessoa que nasceu em %d e de %d anos",anonascimento,anoatual-anonascimento);
+	}else{
+		printf("Ano de nascimento invalido!");
+	}
+	
 	
 }
 

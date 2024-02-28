@@ -92,8 +92,20 @@ void questao06() {
 //7. Faça um programa que leia um número e indique se o número está compreendido
 //entre 20 e 50 ou não.
 void questao07() {
+	//verificar depois a partir daqui
+	int num;
+	printf("Digite um numero qualquer");
+	scanf("%d",&num);
+	if(num>20 && num<50){
+		printf("%d esta compreendido entre 20 e 50");
+	}else if(num<20){
+		printf("%d e menor que 20.");
+	}else if(num>50){
+		printf("%d e maior que 50");
+	}
 
-}
+		 }
+
 
 //8. Faça um programa que leia um número e imprima uma das mensagens: 
 //"Maior do que 20", "Igual a 20"ou "Menor do que 20".

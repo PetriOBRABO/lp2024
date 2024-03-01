@@ -183,6 +183,19 @@ void questao10(){
 
 //11. Faça um programa que leia 3 números e imprima o maior deles.
 void questao11() {
+	int num,num1,num2;
+	int maior;
+	printf("Digite 3 numeros: ");
+	scanf("%d %d %d",&num, &num1, num2);
+	if(num>num1 && num>num2){
+		maior=num;
+	}else if(num1>num &&num1>num2){
+		maior=num1;
+	}else if(num2>num &&num2>num1){
+		maior=num2;
+	}
+	printf("O maior numero entre %d, %d e %d e: %d ",num,num1,num2,maior);
+	
 	
 }
 

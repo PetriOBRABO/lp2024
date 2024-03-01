@@ -399,6 +399,12 @@ void questao24() {
 //0,4 1º e 2º grupos
 //0,5 1º, 2º e 3º grupos
 void questao25() {
+	float nivelpol;
+	printf("Digite o nivel de poluicao, sendo 0.25 o valor maximo aceitavel: ");
+	scanf("%f",&nivelpol);
+	if(nivelpol<=0.3
+	
+	
 	
 }
 

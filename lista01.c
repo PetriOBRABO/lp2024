@@ -228,7 +228,7 @@ void questao13() {
 	scanf("%f %f",&nota1,&nota2);
 	med=(nota1+nota2)/2;
 	if(med>=7){
-		printf("Aprovado com media",med);
+		printf("Aprovado!");
 	}else if(med>3 &&med<7){
 		printf("Prova final!");
 	}else if(med<3){
@@ -247,6 +247,19 @@ void questao13() {
 //Maior que R$1200,00 e menor ou igual a R$2000,00 25%
 //Maior que R$2000,00 30%
 void questao14() {
+	float salario,desconto;
+	printf("Digite seu salario para o calculo do desconto do INSS");
+	scanf("%f",&salario);
+	if(salario<=600){
+		printf("Isento!")
+			}
+	else if(salario>600 && salario<=1200){
+		desconto=salario-salario*0.20;
+		printf("Seu salario recebe 20 por cento de desconto do INSS. Total liquido: %.2f",desconto);
+	}else if(salario>1200 && salario<=2000){
+		desconto=salario-salario*0.25;
+		printf("Seu salario recebe 25 por cento de desconto do INSS. Total liquido: %.2f",desconto);
+	}
 	
 }
 

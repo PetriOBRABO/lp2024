@@ -263,9 +263,19 @@ void questao14() {
 	
 }
 
-//15. Um comerciante comprou umproduto e quer vendê-lo com umlucro de 45% se o valor
+//15. Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o valor
 //da compra for menor que R$20,00, caso contrário, o lucro será de 30%. Faça um programa que leia o valor do produto e imprima o valor da venda.
 void questao15() {
+	float valorproduto;
+	float lucro;
+	printf("Digite o valor do produto: ");
+	scanf("%f",&valorproduto);
+	if(valorproduto<20){
+		lucro=valorproduto+valorproduto*0.45;
+	}else if(valorproduto>20){
+		lucro=valorproduto+valorproduto*0.30;
+	}printf("O valor da venda final de um produto custando %.2f sera de %.2f",valorproduto,lucro);
+	
 	
 }
 

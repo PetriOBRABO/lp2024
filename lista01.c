@@ -204,12 +204,38 @@ void questao11() {
 //• Se é menor de idade
 //• Se é maior de 65 anos
 void questao12() {
+	int idd;
+	printf("Digite sua idade: ");
+	scanf("%d",&idd);
+	if(idd>=18){
+		printf("Tu es maior de idade!");
+	}else if(idd<18){
+		printf("Voce e muleke!");
+	}else if(idd>65){
+		printf("Vos sois um nobilissimo senhor(a)!");
+	}else("???");
 	
 }
 
 //13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota da
-//prova 2 de umaluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final).
+//prova 2 de um aluno. O programa deve imprimir o nome, a nota da prova 1, a nota da prova 2, a média das notas e uma das mensagens: "Aprovado", "Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para reprovação e as demais em prova final).
 void questao13() {
+	char nome[50];
+	float nota1,nota2;
+	printf("Digite seu nome: ");
+	scanf("%s",&nome);
+	printf("Digite a nota da prova 1 e da prova 2 respectivamente: ");
+	scanf("%f %f",&nota1,&nota2);
+	med=(nota1+nota2)/2;
+	if(med>=7){
+		printf("Aprovado com media",med);
+	}else if(med>3 &&med<7){
+		printf("Prova final!");
+	}else if(med<3){
+		printf("Reprovado!");
+	}else("Opcao invalida");
+	
+	
 	
 }
 

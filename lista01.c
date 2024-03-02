@@ -402,10 +402,14 @@ void questao25() {
 	float nivelpol;
 	printf("Digite o nivel de poluicao, sendo 0.25 o valor maximo aceitavel: ");
 	scanf("%f",&nivelpol);
-	if(nivelpol<=0.3
-	
-	
-	
+	if(nivelpol>=0.05 && nivelpol<=0.3){
+		("Vossa empresa ultrapassou os limites aceitaveis de poluicao, e por meio desta notificacao, voce foi intimado por estar no 1 Grupo. ");
+	}else if(nivelpol<=0.4){
+		("Vossa empresa ultrapassou os limites aceitaveis de poluicao, e por meio desta notificacao, voce foi intimado por estar no 1 e 2 Grupos. ");
+	}else if(nivelpol<=0.5 || nivelpol>0.5){
+		("Vossa empresa ultrapassou os limites aceitaveis de poluicao, e por meio desta notificacao, voce foi intimado por estar no 1, 2 e 3 Grupos. ");
+	}
+		
 }
 
 int main() {

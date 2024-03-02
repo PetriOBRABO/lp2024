@@ -362,6 +362,19 @@ void questao19() {
 //de 1001 a 3000 40% do valor do saldo médio
 //acima de 3001 50% do valor do saldo médio
 void questao20() {
+	float saldomed,valorcred;
+	printf("Digite seu saldo medio para calculo do credito especial: ");
+	scanf("%f",&saldomed);
+	if(saldomed>=0 && saldomed<=500){
+		printf("Nenhum credito!");
+	}else if(saldomed>500 && saldomed<=1000){
+		printf("Voce recebera 30 por cento do valor do saldo medio totalizando: ",saldomed+saldomed*0.30);
+	}else if(saldomed>1000 && saldomed<=3000){
+		printf("Voce recebera 40 por cento do valor do saldo medio totalizando: ",saldomed+saldomed*0.40");
+	}else if(saldomed>3000){
+		printf("Voce recebera 50 por cento do valor do saldo medio totalizando: ",saldomed+saldomed*0.50");
+	}
+	
 	
 }
 

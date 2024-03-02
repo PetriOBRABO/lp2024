@@ -322,22 +322,22 @@ void questao17() {
 	printf("Digite a sua idade: ");
 	scanf("%d",&idd);
 	if(idd<=10){
-		printf("Ate 10 anos pagara um valor de R$30,00);
+		printf("Ate 10 anos pagara um valor de R$30,00");
 			}
 			if(idd>10 && idd<=29){
-		printf("11 ate 29 anos pagara um valor de R$60,00);
+		printf("11 ate 29 anos pagara um valor de R$60,00");
 			}
 			if(idd>29 && idd<=45){
-		printf(" 30 ate 45 anos pagara um valor de R$120,00);
+		printf(" 30 ate 45 anos pagara um valor de R$120,00");
 			}
 			if(idd>45 && idd<=59){
-		printf("46 ate 59 anos pagara um valor de R$150,00);
+		printf("46 ate 59 anos pagara um valor de R$150,00");
 			}
 			if(idd>59 && idd<=65){
-		printf("60 ate 65 anos pagara um valor de R$250,00);
+		printf("60 ate 65 anos pagara um valor de R$250,00");
 			}
 			if(idd>65){
-		printf("Maiores de 65 anos pagara um valor de R$400,00);
+		printf("Maiores de 65 anos pagara um valor de R$400,00");
 			}
 	
 }

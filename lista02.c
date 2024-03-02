@@ -7,8 +7,14 @@ EXERCÍCIOS DO CAPÍTULO 3
 #include <math.h>
 
 //1.Faça um programa que imprima todos os números de 1 até 100.
+int i;
+for(i=1;i<=100;i++){
+	printf("%d\n",i);
+}
 
 //2. Faça um programa que imprima todos os números pares de 100 até 1.
+int i;
+for(i=100;i>=1;i--);
 
 //3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
         

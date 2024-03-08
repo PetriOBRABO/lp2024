@@ -387,8 +387,13 @@ void questao21() {
 	int type;
 	printf("Digite o nome do livro que deseja emprestar: ");
 	scanf("%s",&nomeliv);
-	printf("Professor, digite (1):\nAluno, Digite (2):);
-	
+	printf("Professor, digite (1):\nAluno, Digite (2):");
+		if(type==1){
+			printf("Professor, o livro %s foi emprestado com sucesso e devera ser devolvido em ate 10 dias);
+				}
+		else if(type==2){
+			printf("Aluno, o livro %s foi emprestado com sucesso e devera ser devolvido em ate 3 dias);
+				}
 	
 	
 	

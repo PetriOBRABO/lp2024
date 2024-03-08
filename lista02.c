@@ -30,6 +30,22 @@ if(i%5==0){
 //4. Faça umprograma que permita entrar com o nome, a idade e o sexo de 20
 //pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 //e tiver mais de 21 anos.
+char nome[50];
+int idd,i,sx;
+for(i=1;i<=20;i++){
+	printf("Digite o seu nome: ");
+	scanf("%s",&nome);
+	printf("Digite a sua idade: ");
+	scanf("%d",&idd);
+	printf("Digite (1)Masculino / (2)Feminino: ");
+	scanf("%d",&sx);
+	if(sx==1){
+	if(idd>=21){
+		printf("Sr %s do sexo masculino possui %d anos.",nome,idd);
+		}
+		}break;	
+}
+
 
 //5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 //sucessivas, crie um programa que calcule o produto de dois números inteiros

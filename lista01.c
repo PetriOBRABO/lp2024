@@ -383,6 +383,14 @@ void questao20() {
 //• Tipo de usuário:
 //• Total de dias:
 void questao21() {
+	char nomeliv[50];
+	int type;
+	printf("Digite o nome do livro que deseja emprestar: ");
+	scanf("%s",&nomeliv);
+	printf("Professor, digite (1):\nAluno, Digite (2):);
+	
+	
+	
 	
 }
 

@@ -21,6 +21,11 @@ if(i % 2==0){
 }
 
 //3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
+int i;
+for(i=1;i<=500;i++){
+if(i%5==0){
+	printf("%d\n",i);
+}}
         
 //4. Faça umprograma que permita entrar com o nome, a idade e o sexo de 20
 //pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino

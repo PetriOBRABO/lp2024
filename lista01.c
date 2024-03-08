@@ -396,7 +396,8 @@ void questao18() {
 //• Mostrar esses valores em ordem decrescente;
 //• Se a soma dos pontos for maior do que 100, imprimir a média aritmética entre eles, caso contrário, imprimir a mensagem "Equipe desclassificada".
 void questao19() {
-	int equipe1,equipe2,equipe3;
+	char equipe1[3],equipe2[3],equipe3[3];
+	
 
 	
 	

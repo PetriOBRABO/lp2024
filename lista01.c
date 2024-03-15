@@ -450,6 +450,23 @@ void questao21() {
 
 //22. Construa um programa que leia o percurso em quilómetros, o tipo do carro e informe o consumo estimado de combustível, sabendo-se que umcarro tipo C faz 12 kmcom umlitro de gasolina, um tipo B faz 9 kme o tipo C, 8 kmpor litro.
 void questao22() {
+
+	int type;
+	float km,consume;
+	printf("------------------------------------\nDigite o tipo de carro e o percurso em quilometros respectivamente: \n(1)Tipo A.\n(2)Tipo B.\n(3)Tipo C.\n------------------------------------\n");
+	scanf("%d %f",&type,&consume);
+	if(type==1){
+		km=consume/12;
+		printf("O consumo estimado para um carro tipo A e de %.2f km/l.",km);
+	}else if(type==2){
+		km=consume/9;
+		printf("O consumo estimado para um carro tipo B e de %.2f km/l.",km);
+	}
+	else if(type==3){
+		km=consume/8;
+		printf("O consumo estimado para um carro tipo C e de %.2f km/l.",km);
+	}
+		
 	
 }
 

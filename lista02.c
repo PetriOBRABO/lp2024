@@ -50,6 +50,13 @@ for(i=1;i<=20;i++){
 //5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 //sucessivas, crie um programa que calcule o produto de dois números inteiros
 //lidos. Suponha que os números lidos sejam positivos.
+int n,n2,i,produto;
+printf("Digite dois numeros para calcular o produto: ");
+scanf("%d %d",&n,&n2);
+for(i=n;i=n2;i++){
+	produto=i+i;
+}printf("produto e %d",produto);
+
 
 
 //6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.

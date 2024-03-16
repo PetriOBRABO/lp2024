@@ -45,7 +45,7 @@ for(i=1;i<=20;i++){
 		}
 		}break;	
 }
-
+//ar
 
 //5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 //sucessivas, crie um programa que calcule o produto de dois números inteiros
@@ -56,7 +56,7 @@ scanf("%d %d",&n,&n2);
 for(i=n;i=n2;i++){
 	produto=i+i;
 }printf("produto e %d",produto);
-
+//a ver
 
 
 //6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
@@ -64,11 +64,33 @@ for(i=n;i=n2;i++){
 //a partir da soma dos anteriores. Exemplo:
 //• 1 + 1 = 2, terceiro termo;
 //• 1 + 2 = 3, quarto termo, etc.
+int i,soma,j,n=0;
+for(i=1;i<=20;j++){
+	for(i=1;j<=20;n+i){
+soma=i+j;
+printf("%d\n",soma);
+}
 
 //7. Crie um programa que permita entrar com o nome, a nota da
 //prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 //nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 //imprimir a média geral da turma.
+int i;
+float med,nota,nota2;
+char nome[50];
+for(i=1;i<=15;i++){
+printf("Digite seu nome: ");
+scanf("%s",&nome);
+printf("Digite as notas da prova 1 e 2 respectivamente: ");
+scanf("%f %f",&nota,&nota2);
+med=nota+nota2/2;
+	
+}
+for(i=1;i<=15;i++){
+		printf("O aluno %s teve media: %.2f\n",nome,med);
+	}
+//a ver
+
 
 //8. Faça umprograma que permita entrar com o nome e o salário bruto de 10 pessoas.
 //Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda

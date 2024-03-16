@@ -396,7 +396,9 @@ void questao18() {
 //• Mostrar esses valores em ordem decrescente;
 //• Se a soma dos pontos for maior do que 100, imprimir a média aritmética entre eles, caso contrário, imprimir a mensagem "Equipe desclassificada".
 void questao19() {
-	char equipe1[3],equipe2[3],equipe3[3];
+	char equipe1[50],equipe2[50],equipe3[50];
+	printf("Digite os pontos obtidos por cada membro da equipe 1: ");
+	scanf("
 	
 
 	

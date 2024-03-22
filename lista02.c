@@ -98,7 +98,30 @@ for(i=1;i<=15;i++){
 //Salário IRRF
 //Salário menor que R$1300,00 Isento
 //Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
-//Salário maior ou igual a R$2300,00 15% do salário bruto
+//Salário maior ou igual a R$2300,00 15% do salário bruto,
+char nome[50];
+float salar;
+int i;
+for(i=1;i<=2;i++){
+printf("Digite seu nome e o seu salario bruto, respectivamente: ");
+scanf("%s %f",&nome,&salar);
+if(salar>0){
+	
+if(salar<=1300){
+	printf("Isento do IRPF\n");
+}else if(salar>1300 && salar<2300){
+	printf("Imposto de 10% no IRPF sobrando miseros: %.2f\n",salar-salar*0.10);
+}else if(salar>=2300){
+	printf("Imposto de 15% no IRPF sobrando miseros: %.2f\n",salar-salar*0.15);
+}
+}           
+                               }
+
+
+
+
+
+
 
 //9. No dia da estréia do filme "Procurando Dory", uma grande emissora de TV realizou
 //uma pesquisa logo após o encerramento do filme. Cada espectador respondeu

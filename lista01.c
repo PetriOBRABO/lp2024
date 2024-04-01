@@ -396,13 +396,31 @@ void questao18() {
 //• Mostrar esses valores em ordem decrescente;
 //• Se a soma dos pontos for maior do que 100, imprimir a média aritmética entre eles, caso contrário, imprimir a mensagem "Equipe desclassificada".
 void questao19() {
-	char equipe1[50],equipe2[50],equipe3[50];
-	printf("Digite os pontos obtidos por cada membro da equipe 1: ");
-	scanf("
-	
-
-	
-	
+	int n1,n2,n3;
+	printf("Digite os pontos obtidos pelo primeiro atleta: ");
+	scanf("%d",&n1);
+	printf("Digite os pontos obtidos pelo segundo atleta: ");
+	scanf("%d",&n2);
+	printf("Digite os pontos obtidos pelo terceiro atleta: ");
+	scanf("%d",&n3);
+	if(n1<n2 && n1<n3){
+		if(n2<n3){
+			printf("%d, %d, %d ",n1,n2,n3);
+		}else
+			printf("%d, %d, %d ",n1,n3,n2);
+		}
+	else if(n2<n1 && n2<n3){
+		if(n1<n3){
+			printf("%d, %d, %d ",n2,n1,n3);
+		}else
+			printf("%d, %d, %d ",n2,n3,n1);
+	                      }
+	else if(n3<n1 && n3<n2){
+		if(n1<n2){
+			printf("%d, %d, %d ",n3,n1,n2);
+		}else
+			printf("%d, %d, %d ",n3,n2,n1);
+	}
 	
 }
 

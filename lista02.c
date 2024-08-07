@@ -142,7 +142,7 @@ float medfor=0,percentagembom=0;//iteracao de valores for
 printf("-----------------------------------------\n");
 printf("Pesquisa sobre o filme: 'Procurando Dory' \n");
 printf("-----------------------------------------\n");
-for(i=1; i<=2;i++){
+for(i=1; i<=20;i++){
 printf("Digite sua idade: ");
 	scanf("%d",&age);
 printf("Digite: 3 - Excelente, 2 - Bom, 1 - Regular: ");
@@ -161,8 +161,8 @@ printf("Digite: 3 - Excelente, 2 - Bom, 1 - Regular: ");
         
                     }
     }
-medex=medfor/2;
-percentagembom=(porcbom/2)*100;
+medex=medfor/20;
+percentagembom=(porcbom/20)*100;
 printf("A media de opinioes excelentes e de: %.2f\n",medex);
     printf("A quantidade de respostas regulares: %d\n",qtdregular);
         printf("A percentagem de pessoas que responderam bom: %.2f",percentagembom);

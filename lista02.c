@@ -102,7 +102,7 @@ for(i=1;i<=15;i++){
 char nome[50];
 float salar;
 int i;
-for(i=1;i<=2;i++){
+for(i=1;i<=10;i++){
 printf("Digite seu nome e o seu salario bruto, respectivamente: ");
 scanf("%s %f",&nome,&salar);
 if(salar>0){

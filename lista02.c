@@ -133,6 +133,35 @@ if(salar<=1300){
 //• A percentagem de pessoas que responderam bom entre todos os expectadores
 //analisados.
 
+    
+int age, opinion;
+int i, qtdregular;
+float medex,porcbom;
+float medfor=0;//iteracao de valores for
+
+printf("-----------------------------------------\n");
+printf("Pesquisa sobre o filme: 'Procurando Dory' \n");
+printf("-----------------------------------------\n");
+for(i=1; i<=2;i++){
+printf("Digite sua idade: ");
+	scanf("%d",&age);
+printf("Digite: 3 - Excelente, 2 - Bom, 1 - Regular: ");
+    scanf("%d",&opinion);
+    if(opinion == 3){
+        medfor=medfor+1;
+
+                    }
+    if(opinion == 1){
+        qtdregular=qtdregular+1;
+        
+                    }
+    }
+medex=medfor/2;
+printf("A media de opinioes excelentes e de: %.2f\n",medex);
+    printf("A quantidade de respostas regulares: %d",qtdregular);
+
+
+
 //10. Em um campeonato Europeu de Volleyball, se inscreveram 30 países. Sabendo-se
 //que na lista oficial de cada país consta, além de outros dados, peso e idade de 12
 //jogadores, crie um programa que apresente as seguintes informações:

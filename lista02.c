@@ -372,6 +372,24 @@ int num,num100200=0;
 //• amédia das alturas das pessoas com idade entre 10 e 20 anos;
 //• a porcentagem de pessoas com peso inferior a 40 quilos entre todas as
 //pessoas analisadas.
+int idd, fifty=0; // a terminar o codigo
+    float height, weight;
+    float medheight=0, percminus40;
+    while(1){
+    printf("Digite sua idade: ");
+    scanf("%d",&idd);
+        printf("Digite a sua altura: ");
+        scanf("%f",&height);
+            printf("Digite o seu peso: ");
+            scanf("%f",&weight);
+    if(idd>=50){
+        fifty=fifty+1;
+               }
+    if(idd>=10 && idd<=20){
+        medheight=medheight+height;
+                          }
+    
+            }
 
 //29. Construa um programa que receba o valor e o código de várias mercadorias
 //vendidas em umdeterminado dia. Os códigos obedecem a lista a seguir:

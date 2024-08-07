@@ -182,6 +182,20 @@ printf("A media de opinioes excelentes e de: %.2f\n",medex);
 //11. Construa um programa que leia vários números e informe quantos números
 //entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 //deverá cessar sua execução.
+int num,num100200=0;
+    
+    while(1){
+        printf("Digite um numero(0 - para encerrar):  ");
+        scanf("%d",&num);
+        if(num==0){
+            break;
+                    }
+        if(num>99 && num<201){
+            num100200=num100200+1;
+                             }
+        
+    }
+    printf("A quantidade de numeros entre 100 e 200: %d",num100200);
 
 //12. Dado um país A, com 5 milhões de habitantes e uma taxa de natalidade de 3% ao
 //ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao

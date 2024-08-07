@@ -137,7 +137,7 @@ if(salar<=1300){
 int age, opinion;
 int i, qtdregular;
 float medex,porcbom;
-float medfor=0;//iteracao de valores for
+float medfor=0,percentagembom=0;//iteracao de valores for
 
 printf("-----------------------------------------\n");
 printf("Pesquisa sobre o filme: 'Procurando Dory' \n");
@@ -155,10 +155,18 @@ printf("Digite: 3 - Excelente, 2 - Bom, 1 - Regular: ");
         qtdregular=qtdregular+1;
         
                     }
+                    
+    if(opinion == 2){
+        porcbom=porcbom+1;
+        
+                    }
     }
 medex=medfor/2;
+percentagembom=(porcbom/2)*100;
 printf("A media de opinioes excelentes e de: %.2f\n",medex);
-    printf("A quantidade de respostas regulares: %d",qtdregular);
+    printf("A quantidade de respostas regulares: %d\n",qtdregular);
+        printf("A percentagem de pessoas que responderam bom: %.2f",percentagembom);
+
 
 
 

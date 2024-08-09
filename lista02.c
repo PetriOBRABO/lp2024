@@ -218,12 +218,21 @@ int num,num100200=0;
 //• O total de consumo para os três tipos de consumidor
 //• Amédia de consumo dos tipos 1 e 2
 int numcom, type;
-float kwhm;
+float kwhm,res=0.3,com=0.5,ind=0.7;
+while(1){
 printf("Digite o numero do consumidor: ");
 scanf("%d",&numcom);
 printf("Digite a quantidade de kWh consumidos no mes: ");
 scanf("%f",&kwhm);
 printf("Digite o tipo de consumidor; (1 - Residencial, 2 - Comercial, 3 - Industrial: ");
+scanf("%d",&type);
+    if(type==0){
+	     printf("Programa encerrado!");
+        break;
+               }
+	 }
+
+
 
 
 

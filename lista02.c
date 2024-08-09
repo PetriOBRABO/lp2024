@@ -2,6 +2,8 @@
 EXERCÍCIOS DO CAPÍTULO 3
 */
 
+//como começar projeto, compilar, salvar, etc
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

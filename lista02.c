@@ -215,6 +215,15 @@ int num,num100200=0;
 //• O custo total para cada consumidor
 //• O total de consumo para os três tipos de consumidor
 //• Amédia de consumo dos tipos 1 e 2
+int numcom, type;
+float kwhm;
+printf("Digite o numero do consumidor: ");
+scanf("%d",&numcom);
+printf("Digite a quantidade de kWh consumidos no mes: ");
+scanf("%f",&kwhm);
+printf("Digite o tipo de consumidor; (1 - Residencial, 2 - Comercial, 3 - Industrial: ");
+
+
 
 //14. Faça umprograma que leia vários números inteiros e apresente o fatorial de cada
 //número. O algoritmo encerra quando se digita um número menor do que 1.

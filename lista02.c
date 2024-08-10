@@ -226,6 +226,17 @@ printf("Digite a quantidade de kWh consumidos no mes: ");
 scanf("%f",&kwhm);
 printf("Digite o tipo de consumidor; (1 - Residencial, 2 - Comercial, 3 - Industrial: ");
 scanf("%d",&type);
+	if(type==1){
+		printf("O custo total será de: %.2f reais\n",res*kwhm);
+		   }
+	else if(type==2){
+		printf("O custo total será de: %.2f reais\n",com*kwhm);
+			}
+	else if(type==3){
+		printf("O custo total será de: %.2f reais\n",ind*kwhm);
+			}
+
+		
     if(type==0){
 	     printf("Programa encerrado!");
         break;

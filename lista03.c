@@ -14,6 +14,13 @@
     
 //2. Faça umprograma que armazene 10 letras em um vetor e imprima uma listagem
 //numerada.
+char letters[10];
+        int i;
+        for(i=0;i<10;i++){
+            printf("Digite a %d letra: ",i);
+            scanf("%s",&letters);
+    
+}
 
 //3. Construa uma programa em C que armazene 15 números em um vetor e imprima
 //uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.

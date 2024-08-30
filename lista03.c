@@ -24,6 +24,20 @@ char letters[10];
 
 //3. Construa uma programa em C que armazene 15 números em um vetor e imprima
 //uma listagem numerada contendo o número e uma das mensagens: par ou ímpar.
+ int v[15], i;
+
+ printf("\nDigite os 15 valores do vetor:\n");
+ for (i=0; i<3; i++){
+scanf("%d", &v[i]);
+}
+printf("Posicao \t Numero \n");
+ for (i=0; i<3; i++) {
+if ((v[i] % 2) == 0)
+ printf("%d \t\t %d \t par\n", i, v[i]);
+else if((v[i]) % 2 !=0){
+printf("%d \t\t %d \t impar\n", i, v[i]);
+}
+ }
 
 //4. Faça um programa que armazene 8 números em um vetor e imprima todos os
 //números. Ao final, imprima o total de números múltiplos de seis.
